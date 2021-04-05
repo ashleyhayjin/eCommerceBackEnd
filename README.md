@@ -16,8 +16,8 @@ CLI, MYSQL2, Express.js, Node, Sequelize, DOTENV, and  VSCode
 
 ## Github 
 
-[Github] https://github.com/ashleyhayjin/eCommerceBackEnd
+https://github.com/ashleyhayjin/eCommerceBackEnd
 
 ## Video_Demo
 
-[Video] https://www.youtube.com/watch?v=1z9T38gDi-U&ab_channel=AshleyLee
+https://www.youtube.com/watch?v=1z9T38gDi-U&ab_channel=AshleyLee
