@@ -8,15 +8,12 @@ router.get('/', async (req, res) => {
   // be sure to include its associated Product data
   try {
     const tagData = await Tag.findAll({
-      attributes: ['id', 'tag_name'],
-      includes: [
+      include: 
         {
-          model: Product,
-          attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
-        }
-      ]
+          model: Product
+        }     
     });
-    res.status(200),json(tagData);
+    res.status(200).json(tagData);
   } catch(err) {
     res.status(400).json(err);
   }
@@ -30,12 +27,10 @@ router.get('/:id', async (req, res) => {
       where: {
         id: req.params.id,
       }, 
-      includes: [
+      include: 
         {
-          model: Product,
-          attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
+          model: Product
         }      
-      ]
     });
     res.status(200).json(tagData);
   } catch (err) {
